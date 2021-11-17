@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="2e5b6600-d820-46be-b87c-d3a60b17eca6" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Update user" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="2e5b6600-d820-46be-b87c-d3a60b17eca6fileName">Update-user</con:setting>
+  </con:settings>
+  <con:testStep type="datasource" name="Data Source" id="cac759df-8e53-4513-81ea-06288d737109">
+    <con:settings/>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="Data Generator">
+        <con:configuration>
+          <generatedDataCount>10</generatedDataCount>
+          <generatorsTotalNumber>21</generatorsTotalNumber>
+          <lastSelectedProperty>8</lastSelectedProperty>
+          <GeneratorType0>EMAIL</GeneratorType0>
+          <PropertyName0>email</PropertyName0>
+          <repetitionCountemail>1</repetitionCountemail>
+          <repeatValuesemail>false</repeatValuesemail>
+          <GeneratorType1>SET</GeneratorType1>
+          <PropertyName1>title</PropertyName1>
+          <repetitionCounttitle>0</repetitionCounttitle>
+          <repeatValuestitle>false</repeatValuestitle>
+          <ValueFromSetIsSequenceValuetitle>false</ValueFromSetIsSequenceValuetitle>
+          <ValueFromSetStringstitle>Mr.</ValueFromSetStringstitle>
+          <ValueFromSetStringstitle>Mss.</ValueFromSetStringstitle>
+          <ValueFromSetStringstitle>Mrs.</ValueFromSetStringstitle>
+          <GeneratorType2>NAME</GeneratorType2>
+          <PropertyName2>firstName</PropertyName2>
+          <repetitionCountfirstName>0</repetitionCountfirstName>
+          <repeatValuesfirstName>false</repeatValuesfirstName>
+          <NameTypeName2>FirstName</NameTypeName2>
+          <NameGenderName2>Any</NameGenderName2>
+          <GeneratorType3>NAME</GeneratorType3>
+          <PropertyName3>lastName</PropertyName3>
+          <repetitionCountlastName>0</repetitionCountlastName>
+          <repeatValueslastName>false</repeatValueslastName>
+          <NameTypeName3>LastName</NameTypeName3>
+          <NameGenderName3>Any</NameGenderName3>
+          <GeneratorType4>SET</GeneratorType4>
+          <PropertyName4>gender</PropertyName4>
+          <repetitionCountgender>0</repetitionCountgender>
+          <repeatValuesgender>false</repeatValuesgender>
+          <ValueFromSetIsSequenceValuegender>false</ValueFromSetIsSequenceValuegender>
+          <ValueFromSetStringsgender>Male</ValueFromSetStringsgender>
+          <ValueFromSetStringsgender>Female</ValueFromSetStringsgender>
+          <GeneratorType5>SET</GeneratorType5>
+          <PropertyName5>maritalStatus</PropertyName5>
+          <repetitionCountmaritalStatus>0</repetitionCountmaritalStatus>
+          <repeatValuesmaritalStatus>false</repeatValuesmaritalStatus>
+          <ValueFromSetIsSequenceValuemaritalStatus>false</ValueFromSetIsSequenceValuemaritalStatus>
+          <ValueFromSetStringsmaritalStatus>Married</ValueFromSetStringsmaritalStatus>
+          <ValueFromSetStringsmaritalStatus>Single</ValueFromSetStringsmaritalStatus>
+          <ValueFromSetStringsmaritalStatus>Divorced</ValueFromSetStringsmaritalStatus>
+          <GeneratorType6>SET</GeneratorType6>
+          <PropertyName6>employmentStatus</PropertyName6>
+          <repetitionCountemploymentStatus>0</repetitionCountemploymentStatus>
+          <repeatValuesemploymentStatus>false</repeatValuesemploymentStatus>
+          <ValueFromSetIsSequenceValueemploymentStatus>false</ValueFromSetIsSequenceValueemploymentStatus>
+          <ValueFromSetStringsemploymentStatus>Employed</ValueFromSetStringsemploymentStatus>
+          <ValueFromSetStringsemploymentStatus>Unemployed</ValueFromSetStringsemploymentStatus>
+          <ValueFromSetStringsemploymentStatus>student</ValueFromSetStringsemploymentStatus>
+          <GeneratorType7>TIME</GeneratorType7>
+          <PropertyName7>dateOfBirth</PropertyName7>
+          <repetitionCountdateOfBirth>0</repetitionCountdateOfBirth>
+          <repeatValuesdateOfBirth>false</repeatValuesdateOfBirth>
+          <DateTimeDataGeneratorCustomFormatdateOfBirth>YYYY-MM-dd</DateTimeDataGeneratorCustomFormatdateOfBirth>
+          <DateTimeDataGeneratorFormatdateOfBirth>Custom</DateTimeDataGeneratorFormatdateOfBirth>
+          <DateTimeDataGeneratorIsSequentdateOfBirth>true</DateTimeDataGeneratorIsSequentdateOfBirth>
+          <DateTimeDataGeneratorStepDaysdateOfBirth>1</DateTimeDataGeneratorStepDaysdateOfBirth>
+          <DateTimeDataGeneratorStepHoursdateOfBirth>1</DateTimeDataGeneratorStepHoursdateOfBirth>
+          <DateTimeDataGeneratorStepMinsdateOfBirth>1</DateTimeDataGeneratorStepMinsdateOfBirth>
+          <DateTimeDataGeneratorStepSecondsdateOfBirth>1</DateTimeDataGeneratorStepSecondsdateOfBirth>
+          <DateTimeDataGeneratorMinDatedateOfBirth>442809905823</DateTimeDataGeneratorMinDatedateOfBirth>
+          <DateTimeDataGeneratorMaxDatedateOfBirth>1578883505823</DateTimeDataGeneratorMaxDatedateOfBirth>
+          <GeneratorType8>SET</GeneratorType8>
+          <PropertyName8>languagePref</PropertyName8>
+          <repetitionCountlanguagePref>0</repetitionCountlanguagePref>
+          <repeatValueslanguagePref>false</repeatValueslanguagePref>
+          <ValueFromSetIsSequenceValuelanguagePref>false</ValueFromSetIsSequenceValuelanguagePref>
+          <ValueFromSetStringslanguagePref>EN</ValueFromSetStringslanguagePref>
+          <ValueFromSetStringslanguagePref>FR</ValueFromSetStringslanguagePref>
+          <ValueFromSetStringslanguagePref>PA</ValueFromSetStringslanguagePref>
+          <ValueFromSetStringslanguagePref>FA</ValueFromSetStringslanguagePref>
+          <GeneratorType9>COUNTRY</GeneratorType9>
+          <PropertyName9>addressType</PropertyName9>
+          <repetitionCountaddressType>0</repetitionCountaddressType>
+          <repeatValuesaddressType>false</repeatValuesaddressType>
+          <GeneratorType10>ADDRESS</GeneratorType10>
+          <PropertyName10>addressLine</PropertyName10>
+          <repetitionCountaddressLine>0</repetitionCountaddressLine>
+          <repeatValuesaddressLine>false</repeatValuesaddressLine>
+          <AddressDataGeneratorRestrictLength>false</AddressDataGeneratorRestrictLength>
+          <AddressDataGeneratorMaxLength>20</AddressDataGeneratorMaxLength>
+          <GeneratorType11>CITY</GeneratorType11>
+          <PropertyName11>city</PropertyName11>
+          <repetitionCountcity>0</repetitionCountcity>
+          <repeatValuescity>false</repeatValuescity>
+          <GeneratorType12>STATE</GeneratorType12>
+          <PropertyName12>state</PropertyName12>
+          <repetitionCountstate>0</repetitionCountstate>
+          <repeatValuesstate>false</repeatValuesstate>
+          <StatesCountrystate>United States</StatesCountrystate>
+          <StatesFormatstate>Full</StatesFormatstate>
+          <GeneratorType13>USZIP</GeneratorType13>
+          <PropertyName13>postalCode</PropertyName13>
+          <repetitionCountpostalCode>0</repetitionCountpostalCode>
+          <repeatValuespostalCode>false</repeatValuespostalCode>
+          <USZipCodesDataGeneratorFormatpostalCode>All</USZipCodesDataGeneratorFormatpostalCode>
+          <GeneratorType14>INT</GeneratorType14>
+          <PropertyName14>countryCode</PropertyName14>
+          <repetitionCountcountryCode>0</repetitionCountcountryCode>
+          <repeatValuescountryCode>false</repeatValuescountryCode>
+          <IntegerDataGeneratorMinValuecountryCode>1</IntegerDataGeneratorMinValuecountryCode>
+          <IntegerDataGeneratorMaxValuecountryCode>100</IntegerDataGeneratorMaxValuecountryCode>
+          <IntegerDataGeneratorStepValuecountryCode>1</IntegerDataGeneratorStepValuecountryCode>
+          <IntegerDataGeneratorConsequentValuescountryCode>false</IntegerDataGeneratorConsequentValuescountryCode>
+          <GeneratorType15>PHONE</GeneratorType15>
+          <PropertyName15>phoneNumber</PropertyName15>
+          <repetitionCountphoneNumber>0</repetitionCountphoneNumber>
+          <repeatValuesphoneNumber>false</repeatValuesphoneNumber>
+          <PhoneTemplateTypephoneNumber>XXX-XXX-XXXX</PhoneTemplateTypephoneNumber>
+          <GeneratorType16>SET</GeneratorType16>
+          <PropertyName16>phoneExtension</PropertyName16>
+          <repetitionCountphoneExtension>0</repetitionCountphoneExtension>
+          <repeatValuesphoneExtension>false</repeatValuesphoneExtension>
+          <ValueFromSetIsSequenceValuephoneExtension>false</ValueFromSetIsSequenceValuephoneExtension>
+          <ValueFromSetStringsphoneExtension>Yes</ValueFromSetStringsphoneExtension>
+          <ValueFromSetStringsphoneExtension>No</ValueFromSetStringsphoneExtension>
+          <GeneratorType17>SET</GeneratorType17>
+          <PropertyName17>phoneTime</PropertyName17>
+          <repetitionCountphoneTime>0</repetitionCountphoneTime>
+          <repeatValuesphoneTime>false</repeatValuesphoneTime>
+          <ValueFromSetIsSequenceValuephoneTime>false</ValueFromSetIsSequenceValuephoneTime>
+          <ValueFromSetStringsphoneTime>Morning</ValueFromSetStringsphoneTime>
+          <ValueFromSetStringsphoneTime>Noon</ValueFromSetStringsphoneTime>
+          <ValueFromSetStringsphoneTime>Sample 3</ValueFromSetStringsphoneTime>
+          <GeneratorType18>SET</GeneratorType18>
+          <PropertyName18>phoneType</PropertyName18>
+          <repetitionCountphoneType>0</repetitionCountphoneType>
+          <repeatValuesphoneType>false</repeatValuesphoneType>
+          <ValueFromSetIsSequenceValuephoneType>false</ValueFromSetIsSequenceValuephoneType>
+          <ValueFromSetStringsphoneType>Home</ValueFromSetStringsphoneType>
+          <ValueFromSetStringsphoneType>Office</ValueFromSetStringsphoneType>
+          <ValueFromSetStringsphoneType>Sample 3</ValueFromSetStringsphoneType>
+          <GeneratorType19>STR</GeneratorType19>
+          <PropertyName19>userName</PropertyName19>
+          <repetitionCountuserName>0</repetitionCountuserName>
+          <repeatValuesuserName>false</repeatValuesuserName>
+          <PasswordDataGeneratorUseSpacesuserName>false</PasswordDataGeneratorUseSpacesuserName>
+          <PasswordDataGeneratorUsePunctuationMarksuserName>false</PasswordDataGeneratorUsePunctuationMarksuserName>
+          <PasswordDataGeneratorUseLettersuserName>true</PasswordDataGeneratorUseLettersuserName>
+          <PasswordDataGeneratorUseDigitsuserName>false</PasswordDataGeneratorUseDigitsuserName>
+          <PasswordDataGeneratorMaxCharacterCountuserName>10</PasswordDataGeneratorMaxCharacterCountuserName>
+          <PasswordDataGeneratorMinCharacterCountuserName>5</PasswordDataGeneratorMinCharacterCountuserName>
+          <GeneratorType20>STR</GeneratorType20>
+          <PropertyName20>password</PropertyName20>
+          <repetitionCountpassword>0</repetitionCountpassword>
+          <repeatValuespassword>false</repeatValuespassword>
+          <PasswordDataGeneratorUseSpacespassword>false</PasswordDataGeneratorUseSpacespassword>
+          <PasswordDataGeneratorUsePunctuationMarkspassword>true</PasswordDataGeneratorUsePunctuationMarkspassword>
+          <PasswordDataGeneratorUseLetterspassword>true</PasswordDataGeneratorUseLetterspassword>
+          <PasswordDataGeneratorUseDigitspassword>true</PasswordDataGeneratorUseDigitspassword>
+          <PasswordDataGeneratorMaxCharacterCountpassword>10</PasswordDataGeneratorMaxCharacterCountpassword>
+          <PasswordDataGeneratorMinCharacterCountpassword>5</PasswordDataGeneratorMinCharacterCountpassword>
+          <escapeSpaceSequence/>
+        </con:configuration>
+      </con:dataSource>
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:property>email</con:property>
+      <con:property>title</con:property>
+      <con:property>firstName</con:property>
+      <con:property>lastName</con:property>
+      <con:property>gender</con:property>
+      <con:property>maritalStatus</con:property>
+      <con:property>employmentStatus</con:property>
+      <con:property>dateOfBirth</con:property>
+      <con:property>languagePref</con:property>
+      <con:property>addressType</con:property>
+      <con:property>addressLine</con:property>
+      <con:property>city</con:property>
+      <con:property>state</con:property>
+      <con:property>postalCode</con:property>
+      <con:property>countryCode</con:property>
+      <con:property>phoneNumber</con:property>
+      <con:property>phoneExtension</con:property>
+      <con:property>phoneTime</con:property>
+      <con:property>phoneType</con:property>
+      <con:property>userName</con:property>
+      <con:property>password</con:property>
+      <con:restartOnRun>true</con:restartOnRun>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="REST Request" id="7601cd88-96af-40df-9cc5-a8c5568a9dbe">
+    <con:settings/>
+    <con:config service="GetUser" resourcePath="/api/v1/user/{id}" methodName="Method 3" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request" id="1d3760cd-c5a7-439a-98de-d2138c3a6f16" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://www.test-insurance.com</con:endpoint>
+        <con:request>{
+   "primaryPerson" : {
+      "id" : "${#[Regression Test Suite#Get user - positive Test case#REST Request]#Response#$['data']['account']['accountId']}",
+      "username" : "${Data Source#userName}",
+      "email" : "${#[Regression Test Suite#Get user - positive Test case#REST Request]#Response#$['data']['primaryPerson']['email']}",
+      "title" : "${#[Regression Test Suite#Get user - positive Test case#REST Request]#Response#$['data']['primaryPerson']['title']}",
+      "firstName" : "${#[Regression Test Suite#Get user - positive Test case#REST Request]#Response#$['data']['primaryPerson']['firstName']}",
+      "lastName" : "${#[Regression Test Suite#Get user - positive Test case#REST Request]#Response#$['data']['primaryPerson']['lastName']}",
+      "suffix" : "${#[Regression Test Suite#Get user - positive Test case#REST Request]#Response#$['data']['primaryPerson']['suffix']}",
+      "gender" : "${#[Regression Test Suite#Get user - positive Test case#REST Request]#Response#$['data']['primaryPerson']['gender']}",
+      "maritalStatus" : "${#[Regression Test Suite#Get user - positive Test case#REST Request]#Response#$['data']['primaryPerson']['maritalStatus']}",
+      "employmentStatus" : "${#[Regression Test Suite#Get user - positive Test case#REST Request]#Response#$['data']['primaryPerson']['employmentStatus']}",
+      "dateOfBirth" : "${#[Regression Test Suite#Create user Test#REST Request]#Response#$['data']['primaryPerson']['dateOfBirth']}",
+      "languagePref" : "${#[Regression Test Suite#Get user - positive Test case#REST Request]#Response#$['data']['primaryPerson']['languagePref']}",
+      "password" : "${Data Source#password}"
+   },
+   "primaryPersonMailingAddress" : {
+      "id" : "${#[Regression Test Suite#Get user - positive Test case#REST Request]#Response#$['data']['primaryPersonMailingAddress']['id']}",
+      "personId" : "${#[Regression Test Suite#Get user - positive Test case#REST Request]#Response#$['data']['primaryPersonMailingAddress']['personId']}",
+      "addressType" : "${Data Source#addressType}",
+      "addressLine1" : "${Data Source#addressLine}",
+      "addressLine2" : "",
+      "addressLine3" : null,
+      "city" : "${Data Source#city}",
+      "state" : "${Data Source#state}",
+      "postalCode" : "${Data Source#postalCode}",
+      "countryCode" : "${Data Source#countryCode}"
+   },
+   "primaryEmailAddress" : {
+      "personId" : "${#[Regression Test Suite#Get user - positive Test case#REST Request]#Response#$['data']['primaryEmailAddress']['personId']}",
+      "emailAddress" : "${#[Regression Test Suite#Get user - positive Test case#REST Request]#Response#$['data']['primaryEmailAddress']['emailAddress']}"
+   },
+   "primaryPersonPhone" : {
+      "personId" : "${#[Regression Test Suite#Get user - positive Test case#REST Request]#Response#$['data']['primaryPersonMailingAddress']['personId']}",
+      "phoneNumber" : "${#[Regression Test Suite#Get user - positive Test case#REST Request]#Response#$['data']['primaryPersonPhone']['phoneNumber']}",
+      "phoneExtension" : "${#[Regression Test Suite#Get user - positive Test case#REST Request]#Response#$['data']['primaryPersonPhone']['phoneExtension']}",
+      "phoneTime" : "${#[Regression Test Suite#Get user - positive Test case#REST Request]#Response#$['data']['primaryPersonPhone']['phoneTime']}",
+      "phoneType" : "${#[Regression Test Suite#Get user - positive Test case#REST Request]#Response#$['data']['primaryPersonPhone']['phoneType']}"
+   }
+}</con:request>
+        <con:originalUri>https://www.test-insurance.com/api/v1/user/</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="6f50d3a5-5b0e-44ed-b766-4b0206dbb517" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="f4fb4076-41bd-4720-a154-a97144fd081d" name="Response SLA">
+          <con:configuration>
+            <SLA>2000</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="DataAndMetadataAssertion" id="83895744-6975-431e-a23d-a88d4985c7a2" name="Smart Assertion">
+          <con:configuration xsi:type="con:DataAndMetadataAssertion">
+            <con:mode>Received Data</con:mode>
+            <con:elements>
+              <con:path>$['meta']['code']</con:path>
+              <con:element>code</con:element>
+              <con:operatorId>1</con:operatorId>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>200</con:expectedValue>
+              <con:caseSensitive>true</con:caseSensitive>
+              <con:numberType>true</con:numberType>
+              <con:expectedDataType>2</con:expectedDataType>
+            </con:elements>
+            <con:elements>
+              <con:path>$['meta']['status']</con:path>
+              <con:element>status</con:element>
+              <con:operatorId>1</con:operatorId>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>success</con:expectedValue>
+              <con:caseSensitive>true</con:caseSensitive>
+              <con:numberType>false</con:numberType>
+              <con:expectedDataType>1</con:expectedDataType>
+            </con:elements>
+            <con:elements>
+              <con:path>$['data']['sessionID']</con:path>
+              <con:element>sessionID</con:element>
+              <con:operatorId>9</con:operatorId>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjIyODQsImlhdCI6MTYzNTk4NDk2OX0.WDxB2vgJru4p7zWgNDiigVelhy437ICXTYDJObic-zo</con:expectedValue>
+              <con:caseSensitive>true</con:caseSensitive>
+              <con:numberType>false</con:numberType>
+              <con:expectedDataType>1</con:expectedDataType>
+            </con:elements>
+            <con:elements>
+              <con:path>$['data']['primaryPerson']['id']</con:path>
+              <con:element>id</con:element>
+              <con:operatorId>1</con:operatorId>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${#[Regression Test Suite#Get user - positive Test case#REST Request]#Response#$['data']['account']['accountId']}</con:expectedValue>
+              <con:caseSensitive>true</con:caseSensitive>
+              <con:numberType>false</con:numberType>
+              <con:expectedDataType>1</con:expectedDataType>
+            </con:elements>
+            <con:elements>
+              <con:path>$['data']['primaryPerson']['username']</con:path>
+              <con:element>username</con:element>
+              <con:operatorId>1</con:operatorId>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${Data Source#userName}</con:expectedValue>
+              <con:caseSensitive>true</con:caseSensitive>
+              <con:numberType>false</con:numberType>
+              <con:expectedDataType>1</con:expectedDataType>
+            </con:elements>
+            <con:elements>
+              <con:path>$['data']['primaryPerson']['email']</con:path>
+              <con:element>email</con:element>
+              <con:operatorId>1</con:operatorId>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${#[Regression Test Suite#Get user - positive Test case#REST Request]#Response#$['data']['primaryPerson']['email']}</con:expectedValue>
+              <con:caseSensitive>true</con:caseSensitive>
+              <con:numberType>false</con:numberType>
+              <con:expectedDataType>1</con:expectedDataType>
+            </con:elements>
+            <con:elements>
+              <con:path>$['data']['primaryPerson']['title']</con:path>
+              <con:element>title</con:element>
+              <con:operatorId>1</con:operatorId>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${#[Regression Test Suite#Get user - positive Test case#REST Request]#Response#$['data']['primaryPerson']['title']}</con:expectedValue>
+              <con:caseSensitive>true</con:caseSensitive>
+              <con:numberType>false</con:numberType>
+              <con:expectedDataType>1</con:expectedDataType>
+            </con:elements>
+            <con:elements>
+              <con:path>$['data']['primaryPerson']['firstName']</con:path>
+              <con:element>firstName</con:element>
+              <con:operatorId>1</con:operatorId>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${#[Regression Test Suite#Get user - positive Test case#REST Request]#Response#$['data']['primaryPerson']['firstName']}</con:expectedValue>
+              <con:caseSensitive>true</con:caseSensitive>
+              <con:numberType>false</con:numberType>
+              <con:expectedDataType>1</con:expectedDataType>
+            </con:elements>
+            <con:elements>
+              <con:path>$['data']['primaryPerson']['lastName']</con:path>
+              <con:element>lastName</con:element>
+              <con:operatorId>1</con:operatorId>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${#[Regression Test Suite#Get user - positive Test case#REST Request]#Response#$['data']['primaryPerson']['lastName']}</con:expectedValue>
+              <con:caseSensitive>true</con:caseSensitive>
+              <con:numberType>false</con:numberType>
+              <con:expectedDataType>1</con:expectedDataType>
+            </con:elements>
+            <con:elements>
+              <con:path>$['data']['primaryPerson']['suffix']</con:path>
+              <con:element>suffix</con:element>
+              <con:operatorId>1</con:operatorId>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>null</con:expectedValue>
+              <con:caseSensitive>true</con:caseSensitive>
+              <con:numberType>false</con:numberType>
+              <con:expectedDataType>1</con:expectedDataType>
+            </con:elements>
+            <con:elements>
+              <con:path>$['data']['primaryPerson']['gender']</con:path>
+              <con:element>gender</con:element>
+              <con:operatorId>1</con:operatorId>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${#[Regression Test Suite#Get user - positive Test case#REST Request]#Response#$['data']['primaryPerson']['gender']}</con:expectedValue>
+              <con:caseSensitive>true</con:caseSensitive>
+              <con:numberType>false</con:numberType>
+              <con:expectedDataType>1</con:expectedDataType>
+            </con:elements>
+            <con:elements>
+              <con:path>$['data']['primaryPerson']['maritalStatus']</con:path>
+              <con:element>maritalStatus</con:element>
+              <con:operatorId>1</con:operatorId>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${#[Regression Test Suite#Get user - positive Test case#REST Request]#Response#$['data']['primaryPerson']['maritalStatus']}</con:expectedValue>
+              <con:caseSensitive>true</con:caseSensitive>
+              <con:numberType>false</con:numberType>
+              <con:expectedDataType>1</con:expectedDataType>
+            </con:elements>
+            <con:elements>
+              <con:path>$['data']['primaryPerson']['employmentStatus']</con:path>
+              <con:element>employmentStatus</con:element>
+              <con:operatorId>1</con:operatorId>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${#[Regression Test Suite#Get user - positive Test case#REST Request]#Response#$['data']['primaryPerson']['employmentStatus']}</con:expectedValue>
+              <con:caseSensitive>true</con:caseSensitive>
+              <con:numberType>false</con:numberType>
+              <con:expectedDataType>1</con:expectedDataType>
+            </con:elements>
+            <con:elements>
+              <con:path>$['data']['primaryPerson']['dateOfBirth']</con:path>
+              <con:element>dateOfBirth</con:element>
+              <con:operatorId>1</con:operatorId>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>1984-01-12</con:expectedValue>
+              <con:caseSensitive>true</con:caseSensitive>
+              <con:numberType>false</con:numberType>
+              <con:expectedDataType>1</con:expectedDataType>
+            </con:elements>
+            <con:elements>
+              <con:path>$['data']['primaryPerson']['languagePref']</con:path>
+              <con:element>languagePref</con:element>
+              <con:operatorId>1</con:operatorId>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>FR</con:expectedValue>
+              <con:caseSensitive>true</con:caseSensitive>
+              <con:numberType>false</con:numberType>
+              <con:expectedDataType>1</con:expectedDataType>
+            </con:elements>
+            <con:elements>
+              <con:path>$['data']['primaryPerson']['password']</con:path>
+              <con:element>password</con:element>
+              <con:operatorId>1</con:operatorId>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>$2a$10$vhN.HcqHpPYNVzw9SIPREO9tTMin8QglaqdjKHgSttPCAKly8vQqm</con:expectedValue>
+              <con:caseSensitive>true</con:caseSensitive>
+              <con:numberType>false</con:numberType>
+              <con:expectedDataType>1</con:expectedDataType>
+            </con:elements>
+            <con:elements>
+              <con:path>$['data']['primaryPerson']['processAsRenewal']</con:path>
+              <con:element>processAsRenewal</con:element>
+              <con:operatorId>1</con:operatorId>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>null</con:expectedValue>
+              <con:caseSensitive>true</con:caseSensitive>
+              <con:numberType>false</con:numberType>
+              <con:expectedDataType>4</con:expectedDataType>
+            </con:elements>
+            <con:elements>
+              <con:path>$['data']['primaryPerson']['created_at']</con:path>
+              <con:element>created_at</con:element>
+              <con:operatorId>1</con:operatorId>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>2021-11-16 07:51:14</con:expectedValue>
+              <con:caseSensitive>true</con:caseSensitive>
+              <con:numberType>false</con:numberType>
+              <con:expectedDataType>1</con:expectedDataType>
+            </con:elements>
+            <con:elements>
+              <con:path>$['data']['primaryPerson']['updated_at']</con:path>
+              <con:element>updated_at</con:element>
+              <con:operatorId>1</con:operatorId>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>2021-11-16 07:53:08</con:expectedValue>
+              <con:caseSensitive>true</con:caseSensitive>
+              <con:numberType>false</con:numberType>
+              <con:expectedDataType>1</con:expectedDataType>
+            </con:elements>
+            <con:elements>
+              <con:path>$['data']['primaryPerson']['user_id']</con:path>
+              <con:element>user_id</con:element>
+              <con:operatorId>1</con:operatorId>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>null</con:expectedValue>
+              <con:caseSensitive>true</con:caseSensitive>
+              <con:numberType>false</con:numberType>
+              <con:expectedDataType>4</con:expectedDataType>
+            </con:elements>
+            <con:elements>
+              <con:path>$['data']['primaryPersonMailingAddress']['id']</con:path>
+              <con:element>id</con:element>
+              <con:operatorId>1</con:operatorId>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>2512</con:expectedValue>
+              <con:caseSensitive>true</con:caseSensitive>
+              <con:numberType>false</con:numberType>
+              <con:expectedDataType>1</con:expectedDataType>
+            </con:elements>
+            <con:elements>
+              <con:path>$['data']['primaryPersonMailingAddress']['personId']</con:path>
+              <con:element>personId</con:element>
+              <con:operatorId>1</con:operatorId>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>2943</con:expectedValue>
+              <con:caseSensitive>true</con:caseSensitive>
+              <con:numberType>false</con:numberType>
+              <con:expectedDataType>1</con:expectedDataType>
+            </con:elements>
+            <con:elements>
+              <con:path>$['data']['primaryPersonMailingAddress']['addressType']</con:path>
+              <con:element>addressType</con:element>
+              <con:operatorId>1</con:operatorId>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>Taiwan, Province of China</con:expectedValue>
+              <con:caseSensitive>true</con:caseSensitive>
+              <con:numberType>false</con:numberType>
+              <con:expectedDataType>1</con:expectedDataType>
+            </con:elements>
+            <con:elements>
+              <con:path>$['data']['primaryPersonMailingAddress']['addressLine1']</con:path>
+              <con:element>addressLine1</con:element>
+              <con:operatorId>1</con:operatorId>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>20667 NorthMayotte Way</con:expectedValue>
+              <con:caseSensitive>true</con:caseSensitive>
+              <con:numberType>false</con:numberType>
+              <con:expectedDataType>1</con:expectedDataType>
+            </con:elements>
+            <con:elements>
+              <con:path>$['data']['primaryPersonMailingAddress']['addressLine2']</con:path>
+              <con:element>addressLine2</con:element>
+              <con:operatorId>9</con:operatorId>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue xsi:nil="true"/>
+              <con:numberType>false</con:numberType>
+              <con:expectedDataType>1</con:expectedDataType>
+            </con:elements>
+            <con:elements>
+              <con:path>$['data']['primaryPersonMailingAddress']['addressLine3']</con:path>
+              <con:element>addressLine3</con:element>
+              <con:operatorId>1</con:operatorId>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>null</con:expectedValue>
+              <con:caseSensitive>true</con:caseSensitive>
+              <con:numberType>false</con:numberType>
+              <con:expectedDataType>4</con:expectedDataType>
+            </con:elements>
+            <con:elements>
+              <con:path>$['data']['primaryPersonMailingAddress']['city']</con:path>
+              <con:element>city</con:element>
+              <con:operatorId>1</con:operatorId>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>Rocky Mount</con:expectedValue>
+              <con:caseSensitive>true</con:caseSensitive>
+              <con:numberType>false</con:numberType>
+              <con:expectedDataType>1</con:expectedDataType>
+            </con:elements>
+            <con:elements>
+              <con:path>$['data']['primaryPersonMailingAddress']['state']</con:path>
+              <con:element>state</con:element>
+              <con:operatorId>1</con:operatorId>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>Vermont</con:expectedValue>
+              <con:caseSensitive>true</con:caseSensitive>
+              <con:numberType>false</con:numberType>
+              <con:expectedDataType>1</con:expectedDataType>
+            </con:elements>
+            <con:elements>
+              <con:path>$['data']['primaryPersonMailingAddress']['postalCode']</con:path>
+              <con:element>postalCode</con:element>
+              <con:operatorId>1</con:operatorId>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>09731</con:expectedValue>
+              <con:caseSensitive>true</con:caseSensitive>
+              <con:numberType>false</con:numberType>
+              <con:expectedDataType>1</con:expectedDataType>
+            </con:elements>
+            <con:elements>
+              <con:path>$['data']['primaryPersonMailingAddress']['countryCode']</con:path>
+              <con:element>countryCode</con:element>
+              <con:operatorId>1</con:operatorId>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>88</con:expectedValue>
+              <con:caseSensitive>true</con:caseSensitive>
+              <con:numberType>false</con:numberType>
+              <con:expectedDataType>1</con:expectedDataType>
+            </con:elements>
+            <con:elements>
+              <con:path>$['data']['primaryPersonMailingAddress']['created_at']</con:path>
+              <con:element>created_at</con:element>
+              <con:operatorId>1</con:operatorId>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>2021-11-16 07:51:14</con:expectedValue>
+              <con:caseSensitive>true</con:caseSensitive>
+              <con:numberType>false</con:numberType>
+              <con:expectedDataType>1</con:expectedDataType>
+            </con:elements>
+            <con:elements>
+              <con:path>$['data']['primaryPersonMailingAddress']['updated_at']</con:path>
+              <con:element>updated_at</con:element>
+              <con:operatorId>1</con:operatorId>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>2021-11-16 07:53:08</con:expectedValue>
+              <con:caseSensitive>true</con:caseSensitive>
+              <con:numberType>false</con:numberType>
+              <con:expectedDataType>1</con:expectedDataType>
+            </con:elements>
+            <con:elements>
+              <con:path>$['data']['primaryPersonPhone']['personId']</con:path>
+              <con:element>personId</con:element>
+              <con:operatorId>1</con:operatorId>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>2943</con:expectedValue>
+              <con:caseSensitive>true</con:caseSensitive>
+              <con:numberType>false</con:numberType>
+              <con:expectedDataType>1</con:expectedDataType>
+            </con:elements>
+            <con:elements>
+              <con:path>$['data']['primaryPersonPhone']['phoneNumber']</con:path>
+              <con:element>phoneNumber</con:element>
+              <con:operatorId>1</con:operatorId>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>686-362-3141</con:expectedValue>
+              <con:caseSensitive>true</con:caseSensitive>
+              <con:numberType>false</con:numberType>
+              <con:expectedDataType>1</con:expectedDataType>
+            </con:elements>
+            <con:elements>
+              <con:path>$['data']['primaryPersonPhone']['phoneExtension']</con:path>
+              <con:element>phoneExtension</con:element>
+              <con:operatorId>1</con:operatorId>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>No</con:expectedValue>
+              <con:caseSensitive>true</con:caseSensitive>
+              <con:numberType>false</con:numberType>
+              <con:expectedDataType>1</con:expectedDataType>
+            </con:elements>
+            <con:elements>
+              <con:path>$['data']['primaryPersonPhone']['phoneTime']</con:path>
+              <con:element>phoneTime</con:element>
+              <con:operatorId>1</con:operatorId>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>Sample 3</con:expectedValue>
+              <con:caseSensitive>true</con:caseSensitive>
+              <con:numberType>false</con:numberType>
+              <con:expectedDataType>1</con:expectedDataType>
+            </con:elements>
+            <con:elements>
+              <con:path>$['data']['primaryPersonPhone']['phoneType']</con:path>
+              <con:element>phoneType</con:element>
+              <con:operatorId>1</con:operatorId>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>Office</con:expectedValue>
+              <con:caseSensitive>true</con:caseSensitive>
+              <con:numberType>false</con:numberType>
+              <con:expectedDataType>1</con:expectedDataType>
+            </con:elements>
+            <con:originalMessage>{"meta":{"code":200,"status":"success"},"data":{"sessionID":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjIyODQsImlhdCI6MTYzNTk4NDk2OX0.WDxB2vgJru4p7zWgNDiigVelhy437ICXTYDJObic-zo","primaryPerson":{"id":"2943","username":"AHHJSiI","email":"galena.ashley@hotmail.us","title":"Mr.","firstName":"Linda","lastName":"Combs","suffix":"null","gender":"Female","maritalStatus":"Divorced","employmentStatus":"student","dateOfBirth":"1984-01-12","languagePref":"FR","password":"$2a$10$vhN.HcqHpPYNVzw9SIPREO9tTMin8QglaqdjKHgSttPCAKly8vQqm","processAsRenewal":null,"created_at":"2021-11-16 07:51:14","updated_at":"2021-11-16 07:53:08","user_id":null},"primaryPersonMailingAddress":{"id":"2512","personId":"2943","addressType":"Taiwan, Province of China","addressLine1":"20667 NorthMayotte Way","addressLine2":"","addressLine3":null,"city":"Rocky Mount","state":"Vermont","postalCode":"09731","countryCode":"88","created_at":"2021-11-16 07:51:14","updated_at":"2021-11-16 07:53:08"},"primaryPersonPhone":{"personId":"2943","phoneNumber":"686-362-3141","phoneExtension":"No","phoneTime":"Sample 3","phoneType":"Office"}}}</con:originalMessage>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="id" value="${#[Regression Test Suite#Get user - positive Test case#REST Request]#Response#$['data']['account']['accountId']}"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>id</con:entry>
+        </con:parameterOrder>
+        <con:environmentSpec>
+          <con:entry environmentId="9c5a5e97-b8e5-47f4-bf27-a9b4f40b13b0">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="80b55290-7aa7-45cd-85bf-28946820eb8c" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Create user Test" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="80b55290-7aa7-45cd-85bf-28946820eb8cfileName">Create-user-Test</con:setting>
+  </con:settings>
+  <con:testStep type="datasource" name="Data Source" id="7a8344f1-57fc-44d2-9d67-9ea96848d4d5">
+    <con:settings/>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="Data Generator">
+        <con:configuration>
+          <generatedDataCount>10</generatedDataCount>
+          <generatorsTotalNumber>19</generatorsTotalNumber>
+          <lastSelectedProperty>9</lastSelectedProperty>
+          <GeneratorType0>EMAIL</GeneratorType0>
+          <PropertyName0>email</PropertyName0>
+          <repetitionCountemail>1</repetitionCountemail>
+          <repeatValuesemail>false</repeatValuesemail>
+          <GeneratorType1>SET</GeneratorType1>
+          <PropertyName1>title</PropertyName1>
+          <repetitionCounttitle>0</repetitionCounttitle>
+          <repeatValuestitle>false</repeatValuestitle>
+          <ValueFromSetIsSequenceValuetitle>false</ValueFromSetIsSequenceValuetitle>
+          <ValueFromSetStringstitle>Mr.</ValueFromSetStringstitle>
+          <ValueFromSetStringstitle>Mss.</ValueFromSetStringstitle>
+          <ValueFromSetStringstitle>Mrs.</ValueFromSetStringstitle>
+          <GeneratorType2>NAME</GeneratorType2>
+          <PropertyName2>firstName</PropertyName2>
+          <repetitionCountfirstName>0</repetitionCountfirstName>
+          <repeatValuesfirstName>false</repeatValuesfirstName>
+          <NameTypeName2>FirstName</NameTypeName2>
+          <NameGenderName2>Any</NameGenderName2>
+          <GeneratorType3>NAME</GeneratorType3>
+          <PropertyName3>lastName</PropertyName3>
+          <repetitionCountlastName>0</repetitionCountlastName>
+          <repeatValueslastName>false</repeatValueslastName>
+          <NameTypeName3>LastName</NameTypeName3>
+          <NameGenderName3>Any</NameGenderName3>
+          <GeneratorType4>SET</GeneratorType4>
+          <PropertyName4>gender</PropertyName4>
+          <repetitionCountgender>0</repetitionCountgender>
+          <repeatValuesgender>false</repeatValuesgender>
+          <ValueFromSetIsSequenceValuegender>false</ValueFromSetIsSequenceValuegender>
+          <ValueFromSetStringsgender>Male</ValueFromSetStringsgender>
+          <ValueFromSetStringsgender>Female</ValueFromSetStringsgender>
+          <GeneratorType5>SET</GeneratorType5>
+          <PropertyName5>maritalStatus</PropertyName5>
+          <repetitionCountmaritalStatus>0</repetitionCountmaritalStatus>
+          <repeatValuesmaritalStatus>false</repeatValuesmaritalStatus>
+          <ValueFromSetIsSequenceValuemaritalStatus>false</ValueFromSetIsSequenceValuemaritalStatus>
+          <ValueFromSetStringsmaritalStatus>Married</ValueFromSetStringsmaritalStatus>
+          <ValueFromSetStringsmaritalStatus>Single</ValueFromSetStringsmaritalStatus>
+          <ValueFromSetStringsmaritalStatus>Divorced</ValueFromSetStringsmaritalStatus>
+          <GeneratorType6>SET</GeneratorType6>
+          <PropertyName6>employmentStatus</PropertyName6>
+          <repetitionCountemploymentStatus>0</repetitionCountemploymentStatus>
+          <repeatValuesemploymentStatus>false</repeatValuesemploymentStatus>
+          <ValueFromSetIsSequenceValueemploymentStatus>false</ValueFromSetIsSequenceValueemploymentStatus>
+          <ValueFromSetStringsemploymentStatus>Employed</ValueFromSetStringsemploymentStatus>
+          <ValueFromSetStringsemploymentStatus>Unemployed</ValueFromSetStringsemploymentStatus>
+          <ValueFromSetStringsemploymentStatus>student</ValueFromSetStringsemploymentStatus>
+          <GeneratorType7>TIME</GeneratorType7>
+          <PropertyName7>dateOfBirth</PropertyName7>
+          <repetitionCountdateOfBirth>0</repetitionCountdateOfBirth>
+          <repeatValuesdateOfBirth>false</repeatValuesdateOfBirth>
+          <DateTimeDataGeneratorCustomFormatdateOfBirth>YYYY-MM-dd</DateTimeDataGeneratorCustomFormatdateOfBirth>
+          <DateTimeDataGeneratorFormatdateOfBirth>Custom</DateTimeDataGeneratorFormatdateOfBirth>
+          <DateTimeDataGeneratorIsSequentdateOfBirth>true</DateTimeDataGeneratorIsSequentdateOfBirth>
+          <DateTimeDataGeneratorStepDaysdateOfBirth>1</DateTimeDataGeneratorStepDaysdateOfBirth>
+          <DateTimeDataGeneratorStepHoursdateOfBirth>1</DateTimeDataGeneratorStepHoursdateOfBirth>
+          <DateTimeDataGeneratorStepMinsdateOfBirth>1</DateTimeDataGeneratorStepMinsdateOfBirth>
+          <DateTimeDataGeneratorStepSecondsdateOfBirth>1</DateTimeDataGeneratorStepSecondsdateOfBirth>
+          <DateTimeDataGeneratorMinDatedateOfBirth>442809905823</DateTimeDataGeneratorMinDatedateOfBirth>
+          <DateTimeDataGeneratorMaxDatedateOfBirth>1578883505823</DateTimeDataGeneratorMaxDatedateOfBirth>
+          <GeneratorType8>SET</GeneratorType8>
+          <PropertyName8>languagePref</PropertyName8>
+          <repetitionCountlanguagePref>0</repetitionCountlanguagePref>
+          <repeatValueslanguagePref>false</repeatValueslanguagePref>
+          <ValueFromSetIsSequenceValuelanguagePref>false</ValueFromSetIsSequenceValuelanguagePref>
+          <ValueFromSetStringslanguagePref>EN</ValueFromSetStringslanguagePref>
+          <ValueFromSetStringslanguagePref>FR</ValueFromSetStringslanguagePref>
+          <ValueFromSetStringslanguagePref>PA</ValueFromSetStringslanguagePref>
+          <ValueFromSetStringslanguagePref>FA</ValueFromSetStringslanguagePref>
+          <GeneratorType9>COUNTRY</GeneratorType9>
+          <PropertyName9>addressType</PropertyName9>
+          <repetitionCountaddressType>0</repetitionCountaddressType>
+          <repeatValuesaddressType>false</repeatValuesaddressType>
+          <GeneratorType10>ADDRESS</GeneratorType10>
+          <PropertyName10>addressLine</PropertyName10>
+          <repetitionCountaddressLine>0</repetitionCountaddressLine>
+          <repeatValuesaddressLine>false</repeatValuesaddressLine>
+          <AddressDataGeneratorRestrictLength>false</AddressDataGeneratorRestrictLength>
+          <AddressDataGeneratorMaxLength>20</AddressDataGeneratorMaxLength>
+          <GeneratorType11>CITY</GeneratorType11>
+          <PropertyName11>city</PropertyName11>
+          <repetitionCountcity>0</repetitionCountcity>
+          <repeatValuescity>false</repeatValuescity>
+          <GeneratorType12>STATE</GeneratorType12>
+          <PropertyName12>state</PropertyName12>
+          <repetitionCountstate>0</repetitionCountstate>
+          <repeatValuesstate>false</repeatValuesstate>
+          <StatesCountrystate>United States</StatesCountrystate>
+          <StatesFormatstate>Full</StatesFormatstate>
+          <GeneratorType13>USZIP</GeneratorType13>
+          <PropertyName13>postalCode</PropertyName13>
+          <repetitionCountpostalCode>0</repetitionCountpostalCode>
+          <repeatValuespostalCode>false</repeatValuespostalCode>
+          <USZipCodesDataGeneratorFormatpostalCode>All</USZipCodesDataGeneratorFormatpostalCode>
+          <GeneratorType14>INT</GeneratorType14>
+          <PropertyName14>countryCode</PropertyName14>
+          <repetitionCountcountryCode>0</repetitionCountcountryCode>
+          <repeatValuescountryCode>false</repeatValuescountryCode>
+          <IntegerDataGeneratorMinValuecountryCode>1</IntegerDataGeneratorMinValuecountryCode>
+          <IntegerDataGeneratorMaxValuecountryCode>100</IntegerDataGeneratorMaxValuecountryCode>
+          <IntegerDataGeneratorStepValuecountryCode>1</IntegerDataGeneratorStepValuecountryCode>
+          <IntegerDataGeneratorConsequentValuescountryCode>false</IntegerDataGeneratorConsequentValuescountryCode>
+          <GeneratorType15>PHONE</GeneratorType15>
+          <PropertyName15>phoneNumber</PropertyName15>
+          <repetitionCountphoneNumber>0</repetitionCountphoneNumber>
+          <repeatValuesphoneNumber>false</repeatValuesphoneNumber>
+          <PhoneTemplateTypephoneNumber>XXX-XXX-XXXX</PhoneTemplateTypephoneNumber>
+          <GeneratorType16>SET</GeneratorType16>
+          <PropertyName16>phoneExtension</PropertyName16>
+          <repetitionCountphoneExtension>0</repetitionCountphoneExtension>
+          <repeatValuesphoneExtension>false</repeatValuesphoneExtension>
+          <ValueFromSetIsSequenceValuephoneExtension>false</ValueFromSetIsSequenceValuephoneExtension>
+          <ValueFromSetStringsphoneExtension>Yes</ValueFromSetStringsphoneExtension>
+          <ValueFromSetStringsphoneExtension>No</ValueFromSetStringsphoneExtension>
+          <GeneratorType17>SET</GeneratorType17>
+          <PropertyName17>phoneTime</PropertyName17>
+          <repetitionCountphoneTime>0</repetitionCountphoneTime>
+          <repeatValuesphoneTime>false</repeatValuesphoneTime>
+          <ValueFromSetIsSequenceValuephoneTime>false</ValueFromSetIsSequenceValuephoneTime>
+          <ValueFromSetStringsphoneTime>Morning</ValueFromSetStringsphoneTime>
+          <ValueFromSetStringsphoneTime>Noon</ValueFromSetStringsphoneTime>
+          <ValueFromSetStringsphoneTime>Sample 3</ValueFromSetStringsphoneTime>
+          <GeneratorType18>SET</GeneratorType18>
+          <PropertyName18>phoneType</PropertyName18>
+          <repetitionCountphoneType>0</repetitionCountphoneType>
+          <repeatValuesphoneType>false</repeatValuesphoneType>
+          <ValueFromSetIsSequenceValuephoneType>false</ValueFromSetIsSequenceValuephoneType>
+          <ValueFromSetStringsphoneType>Home</ValueFromSetStringsphoneType>
+          <ValueFromSetStringsphoneType>Office</ValueFromSetStringsphoneType>
+          <ValueFromSetStringsphoneType>Sample 3</ValueFromSetStringsphoneType>
+          <escapeSpaceSequence/>
+        </con:configuration>
+      </con:dataSource>
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:property>email</con:property>
+      <con:property>title</con:property>
+      <con:property>firstName</con:property>
+      <con:property>lastName</con:property>
+      <con:property>gender</con:property>
+      <con:property>maritalStatus</con:property>
+      <con:property>employmentStatus</con:property>
+      <con:property>dateOfBirth</con:property>
+      <con:property>languagePref</con:property>
+      <con:property>addressType</con:property>
+      <con:property>addressLine</con:property>
+      <con:property>city</con:property>
+      <con:property>state</con:property>
+      <con:property>postalCode</con:property>
+      <con:property>countryCode</con:property>
+      <con:property>phoneNumber</con:property>
+      <con:property>phoneExtension</con:property>
+      <con:property>phoneTime</con:property>
+      <con:property>phoneType</con:property>
+      <con:restartOnRun>true</con:restartOnRun>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasourceloop" name="Data Source Loop" id="f6899d5b-f21c-4d0c-aada-c30a3244855f" disabled="true">
+    <con:settings/>
+    <con:config>
+      <dataSourceStep>Data Source</dataSourceStep>
+      <targetStep>REST Request</targetStep>
+      <discardResults>false</discardResults>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="REST Request" id="06962eab-eb84-4918-8b35-6a7d51232689">
+    <con:settings/>
+    <con:config service="GetUser" resourcePath="/api/v1/user" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request" id="68d1a1ba-7a87-4f45-a536-b711b0b0aa9c" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://www.test-insurance.com</con:endpoint>
+        <con:request>{
+   "primaryPerson" : {
+      "email" : "${Data Source#email}",
+      "title" : "${Data Source#title}",
+      "firstName" : "${Data Source#firstName}",
+      "lastName" : "${Data Source#lastName}",
+      "gender" : "${Data Source#gender}",
+      "maritalStatus" : "${Data Source#maritalStatus}",
+      "employmentStatus" : "${Data Source#employmentStatus}",
+      "dateOfBirth" : "${Data Source#dateOfBirth}",
+      "languagePref" : "${Data Source#languagePref}"
+   },
+   "primaryPersonMailingAddress" : {
+      "addressType" : "${Data Source#addressType}",
+      "addressLine1" : "${Data Source#addressLine}",
+      "city" : "${Data Source#city}",
+      "state" : "${Data Source#state}",
+      "postalCode" : "${Data Source#postalCode}",
+      "countryCode" : "${Data Source#countryCode}"
+   },
+   "primaryPersonPhone" : {
+      "phoneNumber" : "${Data Source#phoneNumber}",
+      "phoneExtension" : "${Data Source#phoneExtension}",
+      "phoneTime" : "${Data Source#phoneTime}",
+      "phoneType" : "${Data Source#phoneType}"
+   }
+}</con:request>
+        <con:originalUri>https://www.test-insurance.com/api/v1/user</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="e2a2632a-7542-42a6-ae67-ad7b6a45d4fb" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="b9f15ca0-3b6b-42c4-b17a-796c74c16945" name="Response SLA">
+          <con:configuration>
+            <SLA>2000</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>
